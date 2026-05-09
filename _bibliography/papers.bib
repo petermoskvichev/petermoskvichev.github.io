@@ -1,6 +1,39 @@
 ---
 ---
 
+@misc{moskvichev2026kernelconditional,
+  title={Measuring Differences between Conditional Distributions using Kernel Embeddings},
+  author={Peter Moskvichev and Siu Lun Chau and Dino Sejdinovic},
+  year={2026},
+  eprint={2605.02260},
+  archivePrefix={arXiv},
+  primaryClass={stat.ML},
+  url={https://arxiv.org/abs/2605.02260},
+  abstract = {
+    Comparing conditional distributions is a fundamental challenge in statistics and machine learning, with applications across a wide range of domains. While proposed methods for measuring discrepancies using kernel embeddings of distributions in a reproducing kernel Hilbert space (RKHS) provide powerful non-parametric techniques, the existing literature remains fragmented and lacks a unified theoretical treatment. This paper addresses this gap by establishing a coherent framework for studying kernel-based methods to measure divergence between conditional distributions through what we refer to as conditional maximum mean discrepancy (CMMD). The CMMD consists of a family of metrics which we call levels, with three special cases each using a different type of RKHS embedding: CMMD$_0$ (conditional mean operators), CMMD$_1$ (conditional mean embeddings), and CMMD$_2$ (joint mean embeddings). We additionally introduce a general level $s$ CMMD, clarifying the required assumptions, and establishing mathematical connections between the levels through the lens of operator-based smoothing. In addition to reviewing previously proposed estimators, we introduce a novel doubly robust estimator for the CMMD that maintains consistency provided at least one of the underlying models is correctly specified. We provide numerical experiments demonstrating that the CMMD effectively captures complex conditional dependencies for statistical testing.
+  },
+  bibtex_show = {true},
+  preview = {cmmd.png},
+  selected = {true}
+}
+
+@inproceedings{moskvichev_ckce_2025,
+  author = {Moskvichev, Peter and Sejdinovic, Dino},
+  title = {All Models Are Miscalibrated, But Some Less So: Comparing Calibration with Conditional Mean Operators},
+  year = {2025},
+  booktitle = {Australasian Joint Conference on Artificial Intelligence (AJCAI)},
+  url = {https://link.springer.com/chapter/10.1007/978-981-95-4969-6_21},
+  abstract = {
+    When working in a high-risk setting, having well calibrated probabilistic predictive models is a crucial requirement. However, estimators for calibration error are not always able to correctly distinguish which model is better calibrated. We propose the \emph{conditional kernel calibration error} (CKCE) which is based on the Hilbert-Schmidt norm of the difference between conditional mean operators. By considering calibration error as the distance between conditional distributions, which we represent by their embeddings in reproducing kernel Hilbert space, the CKCE is less sensitive to the marginal distribution of predictive model outputs. This makes it more effective for relative comparisons than previously proposed calibration metrics. Our experiments, using both synthetic and real data, show that CKCE provides a more reliable measure of a model's calibration error and is more robust against distribution shift.
+  },
+  bibtex_show = {true},
+  preview = {ckce.png},
+  selected = {true}
+}
+
+---
+---
+
 @string{aps = {American Physical Society,}}
 
 @book{einstein1920relativity,
@@ -57,7 +90,7 @@
   video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
   additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
   annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
+  selected          = {false},
   inspirehep_id     = {3255}
 }
 
