@@ -1,11 +1,11 @@
 metadata:
-  last_updated: '2026-05-11'
+  last_updated: '2026-06-15'
 papers:
   gVKbqBoAAAAJ:u-x6o8ySG0sC:
     citations: 0
     title: Measuring Differences between Conditional Distributions using Kernel Embeddings
     year: '2026'
   gVKbqBoAAAAJ:u5HHmVD_uO8C:
-    citations: 0
+    citations: 1
     title: 'All Models Are Miscalibrated, But Some Less So: Comparing Calibration with Conditional Mean Operators'
     year: '2025'
