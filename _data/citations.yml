@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-13'
+  last_updated: '2026-08-05'
 papers:
   gVKbqBoAAAAJ:u-x6o8ySG0sC:
     citations: 0
@@ -7,5 +7,5 @@ papers:
     year: '2026'
   gVKbqBoAAAAJ:u5HHmVD_uO8C:
     citations: 2
-    title: 'All Models Are Miscalibrated, But Some Less So: Comparing Calibration with Conditional Mean Operators'
+    title: 'All models are miscalibrated, but some less so: Comparing calibration with conditional mean operators'
     year: '2025'
