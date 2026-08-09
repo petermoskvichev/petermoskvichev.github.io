@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Adelaide -> Singapore</p>
+    <p>CCDS, NTU Singapore</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -25,6 +25,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm an incoming PhD student at [Nanyang Technological University Singapore](https://www.ntu.edu.sg) where I will be working with [Rob Cornish](https://jrmcornish.github.io) at the [College of Computing and Data Science](https://www.ntu.edu.sg/computing). My research is focused on creating a mathematical framework for responsible, reliable and robust AI using tools from applied category theory, kernel methods and beyond. 
+I'm a PhD student at [Nanyang Technological University Singapore](https://www.ntu.edu.sg) where I will be working with [Rob Cornish](https://jrmcornish.github.io) at the [College of Computing and Data Science](https://www.ntu.edu.sg/computing). My research is focused on creating a mathematical framework for responsible, reliable and robust AI using tools from applied category theory, causal inference, kernel methods and beyond. 
 
 Previously, I was a Master of Philosophy student supervised by [Dino Sejdinovic](https://sejdino.github.io) and [Lewis Mitchell](https://lewismath.github.io/), and before that I completed a Bachelor of Mathematical Sciences (Advanced) both at [Adelaide University](https://adelaide.edu.au). Outside of academics, I enjoy playing volleyball and watching Formula 1 racing. If any of our research interests align, or you just want to chat, feel free to reach out!
