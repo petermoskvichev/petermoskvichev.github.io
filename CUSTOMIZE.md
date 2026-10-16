@@ -7,6 +7,7 @@ Here we will give you some tips on how to customize the website. One important t
 <!--ts-->
 
 - [Customize](#customize)
+  - [Reusing the saved templates](#reusing-the-saved-templates)
   - [Project structure](#project-structure)
   - [Configuration](#configuration)
   - [GitHub Copilot Customization Agent](#github-copilot-customization-agent)
@@ -62,7 +63,7 @@ Here we will give you some tips on how to customize the website. One important t
     - [How it works](#how-it-works)
     - [Configuration](#configuration-1)
     - [Disable related posts for a specific post](#disable-related-posts-for-a-specific-post)
-    - [Additional configuration in _config.yml](#additional-configuration-in-_configyml)
+    - [Additional configuration in \_config.yml](#additional-configuration-in-_configyml)
   - [Managing publication display](#managing-publication-display)
   - [Adding a Google Calendar](#adding-a-google-calendar)
     - [Basic usage](#basic-usage)
@@ -95,6 +96,28 @@ Here we will give you some tips on how to customize the website. One important t
     - [How to set up the PAT](#how-to-set-up-the-pat)
 
 <!--te-->
+
+## Reusing the saved templates
+
+This personal site keeps the al-folio examples in the repository but excludes them from the published website using `_config.yml`.
+Setting `nav: false` only hides a page from the navigation menu; it does not prevent publication.
+
+- **Pages and collections:** The unused blog, books, projects, teaching, people, dropdown, and repositories pages are listed under `exclude`.
+  The sample `_posts`, `_books`, `_projects`, and `_teachings` folders are excluded too. To add a section, customize its page and entries first,
+  remove the corresponding exclusions, and set the collection's `output` to `true` where applicable. Keep remaining sample entries excluded
+  individually, or mark them `published: false`, so they do not go live with your new content.
+- **Blog and book archives:** Pagination and archive generation are disabled. Enable pagination for a blog, and restore
+  `[year, tags, categories]` under the relevant `jekyll-archives` section if you want those archive pages.
+- **External posts:** `external_sources` is empty. The original examples are kept as comments; replace them with your own sources before enabling them.
+- **Publications:** `_bibliography/papers.bib` contains your research. The original sample entries are saved in
+  `_bibliography/template-examples.bib`. Copy an entry into `papers.bib` and replace its details when adding a paper.
+  Demo posts with Einstein citations will need to reference the sample bibliography if you reuse them unchanged.
+- **Sample assets:** The example PDF, Einstein CV files, JSON resume, and standalone HTML/notebook/Plotly examples are also excluded.
+  Remove individual exclusions if you reuse those assets. Shared layouts, styles, scripts, and images remain available.
+- **Resume:** The CV download is configured by `cv_pdf` in `_pages/cv.md` and currently points to `assets/pdf/Resume 2026.pdf`.
+  The URL uses `%20` for the space. The HTML CV is maintained separately in `_data/cv.yml`; replacing the PDF does not update that data.
+
+After enabling a section, build the site and check `_site/sitemap.xml` to confirm that it lists only the pages you intend to publish.
 
 ## Project structure
 
